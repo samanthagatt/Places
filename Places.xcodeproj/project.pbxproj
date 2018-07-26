@@ -17,6 +17,8 @@
 		D6D0F60A210A2E600047949E /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F609210A2E600047949E /* PlacesTableViewController.swift */; };
 		D6D0F60C210A2E830047949E /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F60B210A2E830047949E /* CreateNewPlaceViewController.swift */; };
 		D6D0F60E210A32B30047949E /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D0F60D210A32B30047949E /* PlacesTable.storyboard */; };
+		D6D0F610210A3AE30047949E /* PlacesTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F60F210A3AE30047949E /* PlacesTabBarViewController.swift */; };
+		D6D0F612210A3BBA0047949E /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F611210A3BBA0047949E /* PlacesPresenter.swift */; };
 		D6F73EF2210A2A450047AF35 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F73EF1210A2A450047AF35 /* Place.swift */; };
 		D6F73EF5210A2AF30047AF35 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F73EF4210A2AF30047AF35 /* PlaceController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		D6D0F609210A2E600047949E /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		D6D0F60B210A2E830047949E /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
 		D6D0F60D210A32B30047949E /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		D6D0F60F210A3AE30047949E /* PlacesTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabBarViewController.swift; sourceTree = "<group>"; };
+		D6D0F611210A3BBA0047949E /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 		D6F73EF1210A2A450047AF35 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		D6F73EF4210A2AF30047AF35 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +72,7 @@
 		9DC8C28A210A1DAE00A4B391 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				D6D0F611210A3BBA0047949E /* PlacesPresenter.swift */,
 				9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */,
 				D6F73EF3210A2AD20047AF35 /* Models */,
 				D6F73EF6210A2AF80047AF35 /* Model Controllers */,
@@ -105,6 +110,7 @@
 				D6D0F607210A2E3D0047949E /* VisitedPlacesViewController.swift */,
 				D6D0F609210A2E600047949E /* PlacesTableViewController.swift */,
 				D6D0F60B210A2E830047949E /* CreateNewPlaceViewController.swift */,
+				D6D0F60F210A3AE30047949E /* PlacesTabBarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,9 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F73EF2210A2A450047AF35 /* Place.swift in Sources */,
+				D6D0F612210A3BBA0047949E /* PlacesPresenter.swift in Sources */,
 				D6F73EF5210A2AF30047AF35 /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
+				D6D0F610210A3AE30047949E /* PlacesTabBarViewController.swift in Sources */,
 				D6D0F608210A2E3D0047949E /* VisitedPlacesViewController.swift in Sources */,
 				D6D0F60C210A2E830047949E /* CreateNewPlaceViewController.swift in Sources */,
 				D6D0F60A210A2E600047949E /* PlacesTableViewController.swift in Sources */,
@@ -349,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 84AK8SAYG2;
 				INFOPLIST_FILE = "$(SRCROOT)/Places/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 84AK8SAYG2;
 				INFOPLIST_FILE = "$(SRCROOT)/Places/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
