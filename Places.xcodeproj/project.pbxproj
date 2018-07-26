@@ -13,6 +13,12 @@
 		9DC8C296210A1DAF00A4B391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8C294210A1DAF00A4B391 /* LaunchScreen.storyboard */; };
 		9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8C2AC210A1F9F00A4B391 /* MapViewController.swift */; };
 		9DC8C2B1210A206600A4B391 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8C2B0210A206600A4B391 /* MapView.storyboard */; };
+		D6D0F608210A2E3D0047949E /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F607210A2E3D0047949E /* VisitedPlacesViewController.swift */; };
+		D6D0F60A210A2E600047949E /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F609210A2E600047949E /* PlacesTableViewController.swift */; };
+		D6D0F60C210A2E830047949E /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0F60B210A2E830047949E /* CreateNewPlaceViewController.swift */; };
+		D6D0F60E210A32B30047949E /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D0F60D210A32B30047949E /* PlacesTable.storyboard */; };
+		D6F73EF2210A2A450047AF35 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F73EF1210A2A450047AF35 /* Place.swift */; };
+		D6F73EF5210A2AF30047AF35 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F73EF4210A2AF30047AF35 /* PlaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		9DC8C297210A1DAF00A4B391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DC8C2AC210A1F9F00A4B391 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9DC8C2B0210A206600A4B391 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		D6D0F607210A2E3D0047949E /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisitedPlacesViewController.swift; path = "Places/View Controllers/VisitedPlacesViewController.swift"; sourceTree = SOURCE_ROOT; };
+		D6D0F609210A2E600047949E /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		D6D0F60B210A2E830047949E /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
+		D6D0F60D210A32B30047949E /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		D6F73EF1210A2A450047AF35 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		D6F73EF4210A2AF30047AF35 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */,
-				9DC8C2B4210A21A300A4B391 /* Protocols */,
-				9DC8C29F210A1E9F00A4B391 /* Model */,
-				9DC8C2A4210A1EE300A4B391 /* Model Controllers */,
+				D6F73EF3210A2AD20047AF35 /* Models */,
+				D6F73EF6210A2AF80047AF35 /* Model Controllers */,
 				9DC8C2A7210A1F5000A4B391 /* View Controllers */,
 				9DC8C29D210A1DB500A4B391 /* Resources */,
 			);
@@ -81,38 +92,37 @@
 			children = (
 				9DC8C28F210A1DAE00A4B391 /* Main.storyboard */,
 				9DC8C2B0210A206600A4B391 /* MapView.storyboard */,
+				D6D0F60D210A32B30047949E /* PlacesTable.storyboard */,
 				9DC8C294210A1DAF00A4B391 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		9DC8C29F210A1E9F00A4B391 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		9DC8C2A4210A1EE300A4B391 /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		9DC8C2A7210A1F5000A4B391 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9DC8C2AC210A1F9F00A4B391 /* MapViewController.swift */,
+				D6D0F607210A2E3D0047949E /* VisitedPlacesViewController.swift */,
+				D6D0F609210A2E600047949E /* PlacesTableViewController.swift */,
+				D6D0F60B210A2E830047949E /* CreateNewPlaceViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		9DC8C2B4210A21A300A4B391 /* Protocols */ = {
+		D6F73EF3210A2AD20047AF35 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D6F73EF1210A2A450047AF35 /* Place.swift */,
 			);
-			path = Protocols;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6F73EF6210A2AF80047AF35 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6F73EF4210A2AF30047AF35 /* PlaceController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC8C296210A1DAF00A4B391 /* LaunchScreen.storyboard in Resources */,
+				D6D0F60E210A32B30047949E /* PlacesTable.storyboard in Resources */,
 				9DC8C293210A1DAF00A4B391 /* Assets.xcassets in Resources */,
 				9DC8C2B1210A206600A4B391 /* MapView.storyboard in Resources */,
 				9DC8C291210A1DAE00A4B391 /* Main.storyboard in Resources */,
@@ -187,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F73EF2210A2A450047AF35 /* Place.swift in Sources */,
+				D6F73EF5210A2AF30047AF35 /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
+				D6D0F608210A2E3D0047949E /* VisitedPlacesViewController.swift in Sources */,
+				D6D0F60C210A2E830047949E /* CreateNewPlaceViewController.swift in Sources */,
+				D6D0F60A210A2E600047949E /* PlacesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
